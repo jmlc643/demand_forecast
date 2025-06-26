@@ -186,7 +186,11 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) par
 
 ## 👥 Autores
 
-- Tu nombre - [@tu-usuario](https://github.com/tu-usuario)
+- Aguilar Perez, Manuel
+- Cortez Bayona, Frank
+- Luyo Campos, Jose Maria
+- Monge Alcalde, Rodrigo
+- Villacorta Cordova, Flavio
 
 ## 🙏 Agradecimientos
 
