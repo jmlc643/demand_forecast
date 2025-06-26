@@ -38,7 +38,7 @@ pip install -r requirements.txt
 python back.py
 ```
 
-La API estará disponible en: `http://127.0.0.1:8000`
+La API estará disponible en: `http://127.0.0.1:8000` y en despliegue `https://demand-forecast-my51.onrender.com`
 
 ## 📊 Modelo de Datos
 
@@ -96,7 +96,7 @@ class PredictionInput(BaseModel):
 ### Ejemplo con cURL
 
 ```bash
-curl -X POST "http://localhost:8000/predict" \
+curl -X POST "http://127.0.0.1:8000/predict" \
      -H "Content-Type: application/json" \
      -d '{
        "UnitPrice": 55.0,
@@ -115,7 +115,7 @@ curl -X POST "http://localhost:8000/predict" \
 import requests
 import json
 
-url = "http://localhost:8000/predict"
+url = "http://127.0.0.1:8000/predict"
 data = {
     "UnitPrice": 55.0,
     "Discount": 0.10,
@@ -134,8 +134,8 @@ print(response.json())
 
 Una vez que la aplicación esté ejecutándose, puedes acceder a la documentación interactiva:
 
-- **Swagger UI**: `http://localhost:8000/docs`
-- **ReDoc**: `http://localhost:8000/redoc`
+- **Swagger UI**: `http://127.0.0.1:8000/docs`
+- **ReDoc**: `http://127.0.0.1:8000/redoc`
 
 ## 🐳 Docker
 
