@@ -1,0 +1,7 @@
+fastapi[standard]
+uvicorn
+pydantic
+pandas
+numpy
+joblib
+xgboost
