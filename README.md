@@ -76,20 +76,20 @@ class PredictionInput(BaseModel):
 **Cuerpo de la petición**:
 ```json
 {
-  "UnitPrice": 55.0,
-  "Discount": 0.10,
-  "ShippingCost": 12.5,
-  "Category": "Electronics",
+  "UnitPrice": 5.0,
+  "Discount": 0.12,
+  "ShippingCost": 8.5,
+  "Category": "Accessories",
   "PaymentMethod": "Credit Card",
   "SalesChannel": "Online",
-  "InvoiceDate": "2020-05-11 14:00"
+  "InvoiceDate": "2020-02-21 12:00"
 }
 ```
 
 **Respuesta esperada**:
 ```json
 {
-  "predicted_quantity": 24
+  "predicted_quantity": 4
 }
 ```
 
@@ -99,14 +99,14 @@ class PredictionInput(BaseModel):
 curl -X POST "http://127.0.0.1:8000/predict" \
      -H "Content-Type: application/json" \
      -d '{
-       "UnitPrice": 55.0,
-       "Discount": 0.10,
-       "ShippingCost": 12.5,
-       "Category": "Electronics",
-       "PaymentMethod": "Credit Card",
-       "SalesChannel": "Online",
-       "InvoiceDate": "2020-05-11 14:00"
-     }'
+            "UnitPrice": 5.0,
+            "Discount": 0.12,
+            "ShippingCost": 8.5,
+            "Category": "Accessories",
+            "PaymentMethod": "Credit Card",
+            "SalesChannel": "Online",
+            "InvoiceDate": "2020-02-21 12:00"
+        }'
 ```
 
 ### Ejemplo con Python
@@ -117,13 +117,13 @@ import json
 
 url = "http://127.0.0.1:8000/predict"
 data = {
-    "UnitPrice": 55.0,
-    "Discount": 0.10,
-    "ShippingCost": 12.5,
-    "Category": "Electronics",
+    "UnitPrice": 5.0,
+    "Discount": 0.12,
+    "ShippingCost": 8.5,
+    "Category": "Accessories",
     "PaymentMethod": "Credit Card",
     "SalesChannel": "Online",
-    "InvoiceDate": "2020-05-11 14:00"
+    "InvoiceDate": "2020-02-21 12:00"
 }
 
 response = requests.post(url, json=data)
